@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/itunes.css' %}">
+  <script src="{% static 'javascript/javascript.js' %}" defer></script>
+  <title>Music Search</title>
+</head>
+<body class="dark-mode || light-mode">
+  <button class="btn-toggle">Toggle Dark Mode</button>
+  <header>Search iTunes</header>
+  <div class="container">
+    <form class="form-field">
+      <div class="search-section">
+        <input class="song-input" placeholder="song and/or band name" required>
+        <button class="search-song">Search!</button>
+      </div>
+      <div class="player-container">
+        <audio controls class="sound-control"></audio>
+      </div>
+      <div class="song-section">
+      </div>
+      <div id="submit">
+
+      </div>
+    </form>
+  </div>
+  </body>
+</body>
+</html>
